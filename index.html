@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="h-screen w-screen flex justify-center items-center bg-yellow-300">
+
+  
+  <!-- Card -->
+  <div class="flex flex-col w-[20rem] md:w-[30rem] h-[28rem] md:h-[33rem] rounded-3xl p-6 bg-white">
+    <!-- Content -->
+    <img src="./assets/images/illustration-article.svg" alt="illustration" class="rounded-xl mb-4">
+    <div class="text-sm text-center font-bold bg-yellow-300 rounded-md px-4 py-1 w-[100px] mb-2">
+      Learning
+    </div>
+    <p class="text-xs font-bold text-gray-700 mb-3">Published 21 Dec 2023</p>
+    <h1 class="text-lg font-bold mb-3">HTML & CSS foundations</h1>
+    <p class="text-sm text-gray-500">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+    <!-- Author -->
+    <div class="flex flex-row mt-auto items-center w-full h-auto">
+      <img src="./assets/images/image-avatar.webp" alt="author photo profile" class="h-8 w-auto mr-2">
+      <h2 class="text-sm font-bold">Greg Hooper</h2>
+    </div>
+  </div>
+
+  <div class="absolute -z-10 ml-4 mt-4 w-[20rem] h-[28rem] rounded-3xl p-6 bg-black md:invisible"></div><div></div>
+  <div class="absolute -z-10 ml-4 mt-4 w-[30rem] h-[33rem] rounded-3xl p-6 bg-black invisible md:visible"></div><div></div>
+
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
